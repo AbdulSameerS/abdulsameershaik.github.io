@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Sameer Shaik | Data Scientist Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Abdul Sameer Shaik, a Data Scientist specializing in ETL pipelines, Machine Learning, and Cloud Architecture.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Abdul<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-elements">
+                <div class="glow glow-1"></div>
+                <div class="glow glow-2"></div>
+            </div>
+            <div class="container hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Abdul Sameer <span class="text-gradient">Shaik</span></h1>
+                <h2 class="hero-role">Data Scientist & <span id="typewriter"></span></h2>
+                <p class="hero-desc">
+                    Designing and maintaining scalable ETL pipelines, integrating data via APIs, and building predictive
+                    models to drive business insights.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:shaik.abduls@northeastern.edu" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+                    <p class="section-subtitle">My journey in the tech industry</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">Sep 2025 - Present</div>
+                            <h3 class="job-role">Application Data Processor</h3>
+                            <h4 class="company">Northeastern University <span class="location">| Boston, MA</span></h4>
+                            <ul class="job-details">
+                                <li>Processed and verified international academic credentials for the Foreign Credential
+                                    Evaluation Team, ensuring complete documentation.</li>
+                                <li>Collaborated cross-functionally with multiple departments to resolve credential
+                                    discrepancies and streamline application workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">Aug 2022 - Dec 2024</div>
+                            <h3 class="job-role">Data Scientist</h3>
+                            <h4 class="company">Tata Consultancy Services <span class="location">| Chennai, India</span>
+                            </h4>
+                            <ul class="job-details">
+                                <li>Architected end-to-end ETL pipelines using Python (Pandas, PySpark), SQL, and
+                                    Snowflake, improving data integrity and reducing processing time by 40%.</li>
+                                <li>Engineered scalable data infrastructure leveraging AWS Glue, Delta Lake, Redshift,
+                                    and built APIs for data access.</li>
+                                <li>Developed and deployed machine learning models (Scikit-learn, XGBoost) to predict
+                                    business disruptions, achieving a 12% reduction in impact.</li>
+                                <li>Built interactive dashboards using Power BI, Tableau, and Plotly to communicate
+                                    predictive insights.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">Mar 2022 - Jun 2024</div>
+                            <h3 class="job-role">Machine Learning Intern</h3>
+                            <h4 class="company">Cognizant <span class="location">| Chennai, India</span></h4>
+                            <ul class="job-details">
+                                <li>Processed millions of records using Apache Spark and PySpark as part of ETL
+                                    workflows, achieving over 3x speedup.</li>
+                                <li>Collaborated cross-functionally to build and maintain data models and schema within
+                                    cloud data warehouses such as Snowflake and Hive.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Showcase of my technical achievements</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <h3 class="project-title">Semantic Resume Matching System</h3>
+                                <div class="project-links">
+                                    <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-desc">
+                                Developed a Context-Aware Resume Job Matching Model using LLaMA, FAISS, and RAG to
+                                precisely align resumes with job descriptions, improving match relevance by 40%. used
+                                Sentence Transformer embeddings for semantic similarity.
+                            </p>
+                            <div class="project-tags">
+                                <span>LLaMA</span>
+                                <span>FAISS</span>
+                                <span>RAG</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <h3 class="project-title">Cloud-Native Delta Lake Development</h3>
+                                <div class="project-links">
+                                    <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-desc">
+                                Engineered a scalable, cloud-based Delta Lake pipeline using AWS Glue, Amazon S3, and
+                                Redshift. Established real-time analytics foundation and ensured high data integrity
+                                with Delta Lake transaction logs.
+                            </p>
+                            <div class="project-tags">
+                                <span>AWS Glue</span>
+                                <span>S3</span>
+                                <span>Redshift</span>
+                                <span>Delta Lake</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <h3 class="project-title">Toxicity Detection in Game Chats</h3>
+                                <div class="project-links">
+                                    <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-desc">
+                                Created a smart AI model using DistilBERT and PyTorch that found toxic chat messages
+                                with an 88% accuracy (F1-score). Optimized using T5Tokenizer making model training 25%
+                                faster. Built scalable pipeline with AWS S3.
+                            </p>
+                            <div class="project-tags">
+                                <span>DistilBERT</span>
+                                <span>PyTorch</span>
+                                <span>NLP</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                    <p class="section-subtitle">Tools and technologies I work with</p>
+                </div>
+
+                <div class="skills-wrapper">
+                    <div class="skill-category card">
+                        <h3>Programming & Databases</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>R</span>
+                            <span>Java</span>
+                            <span>C++</span>
+                            <span>PostgreSQL</span>
+                            <span>MySQL</span>
+                            <span>Snowflake</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h3>Data Engineering & Cloud</h3>
+                        <div class="skill-tags">
+                            <span>Apache Spark</span>
+                            <span>Kafka</span>
+                            <span>Airflow</span>
+                            <span>AWS (S3, Redshift)</span>
+                            <span>Azure</span>
+                            <span>GCP BigQuery</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Hadoop</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h3>ML & Analytics</h3>
+                        <div class="skill-tags">
+                            <span>PyTorch</span>
+                            <span>TensorFlow</span>
+                            <span>Scikit-Learn</span>
+                            <span>LLaMA</span>
+                            <span>Tableau</span>
+                            <span>PowerBI</span>
+                            <span>Plotly</span>
+                            <span>Pandas</span>
+                            <span>Spark Streaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education <span class="text-gradient">History</span></h2>
+                </div>
+
+                <div class="education-grid">
+                    <div class="edu-card card">
+                        <div class="edu-top">
+                            <div>
+                                <h3 class="school">Northeastern University</h3>
+                                <p class="degree">Masters of Science, Data Science</p>
+                            </div>
+                            <span class="edu-date">May 2027</span>
+                        </div>
+                        <p class="gpa">GPA: 3.75/4.0</p>
+                        <p class="coursework">Coursework: Supervised/Unsupervised ML, Data Management, Processing</p>
+                    </div>
+
+                    <div class="edu-card card">
+                        <div class="edu-top">
+                            <div>
+                                <h3 class="school">Madanapalle Institute of Technology & Science</h3>
+                                <p class="degree">Bachelor of Technology, ECE</p>
+                            </div>
+                            <span class="edu-date">Jun 2022</span>
+                        </div>
+                        <p class="gpa">GPA: 3.42/4.0</p>
+                        <p class="coursework">Coursework: Programming, Data Structures, Big Data, Data Warehousing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                        I'll try my best to get back to you!</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:shaik.abduls@northeastern.edu">shaik.abduls@northeastern.edu</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (617)-952-3406</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boston, MA</span>
+                        </div>
+                    </div>
+                    <div class="social-large">
+                        <a href="https://linkedin.com" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abdul Sameer Shaik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
