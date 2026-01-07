@@ -116,9 +116,10 @@ class Particle {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 2 + 0.5; // Random size
-        this.speedX = (Math.random() * 1) - 0.5; // Random speed
-        this.speedY = (Math.random() * 1) - 0.5;
-        this.color = '#00fff2'; // base particle color (Cyan)
+        this.speedX = (Math.random() * 1.5) - 0.75; // Faster speed
+        this.speedY = (Math.random() * 1.5) - 0.75;
+        // Randomly assign cyan or purple
+        this.color = Math.random() > 0.5 ? '#00f3ff' : '#bc13fe';
     }
 
     update() {
@@ -134,7 +135,10 @@ class Particle {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fillStyle = this.color;
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = this.color;
         ctx.fill();
+        ctx.shadowBlur = 0; // Reset
     }
 }
 
@@ -164,8 +168,8 @@ function animate() {
 
             if (distance < 110) {
                 ctx.beginPath();
-                ctx.strokeStyle = `rgba(0, 255, 242, ${1 - distance / 110})`; // Opacity based on distance
-                ctx.lineWidth = 0.5;
+                ctx.strokeStyle = `rgba(200, 255, 255, ${0.8 - (distance / 110)})`; // Electric white-cyan
+                ctx.lineWidth = 0.6;
                 ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
                 ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
                 ctx.stroke();
