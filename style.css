@@ -1,31 +1,32 @@
 :root {
-    /* Aurora Professional Theme */
-    --bg-color: #050511;
-    /* Deepest Indigo/Black */
+    /* Bright Aurora Theme (Clean & Colorful) */
+    --bg-color: #fafafa;
+    /* Off-white */
 
-    /* Glass / Cards */
-    --card-bg: rgba(20, 20, 35, 0.4);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --card-hover-border: rgba(255, 255, 255, 0.25);
+    /* Glass / Cards (Light Mode) */
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-hover-border: rgba(79, 70, 229, 0.4);
 
-    /* Text */
-    --text-primary: #ffffff;
-    --text-secondary: #cbd5e1;
-    /* Slate 300 */
+    /* Text (High Contrast Dark) */
+    --text-primary: #1e293b;
+    /* Slate 800 */
+    --text-secondary: #475569;
+    /* Slate 600 */
     --text-tertiary: #94a3b8;
     /* Slate 400 */
 
-    /* Accents */
-    --accent-primary: #8b5cf6;
-    /* Violet dot */
-    --accent-glow: rgba(139, 92, 246, 0.5);
+    /* Accents - Vibrant */
+    --accent-primary: #6366f1;
+    /* Indigo 500 */
+    --accent-glow: rgba(99, 102, 241, 0.25);
 
-    --gradient-1: #3b82f6;
-    /* Blue */
+    --gradient-1: #06b6d4;
+    /* Cyan */
     --gradient-2: #8b5cf6;
-    /* Purple */
-    --gradient-3: #ec4899;
-    /* Pink */
+    /* Violet */
+    --gradient-3: #f43f5e;
+    /* Rose */
 
     --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -46,14 +47,14 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 
-    /* Aurora Background Effect */
+    /* Bright Aurora Background Effect */
     background-image:
-        radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15), transparent 25%),
-        /* Blue orb */
-        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%),
-        /* Purple orb */
-        radial-gradient(circle at 50% 0%, rgba(236, 72, 153, 0.1), transparent 40%);
-    /* Pink top wash */
+        radial-gradient(circle at 15% 10%, rgba(6, 182, 212, 0.08), transparent 40%),
+        /* Cyan */
+        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.1), transparent 40%),
+        /* Purple */
+        radial-gradient(circle at 50% 80%, rgba(244, 63, 94, 0.08), transparent 40%);
+    /* Rose */
     background-attachment: fixed;
 }
 
@@ -228,16 +229,7 @@ a {
     transition: var(--transition);
 }
 
-.btn-primary {
-    background: var(--text-primary);
-    color: var(--bg-color);
-    border: 1px solid var(--text-primary);
-}
 
-.btn-primary:hover {
-    background: transparent;
-    color: var(--text-primary);
-}
 
 .btn-secondary {
     background: transparent;
@@ -256,7 +248,7 @@ a {
     border-bottom: 1px solid var(--card-border);
     padding: 1.5rem 0;
     margin-bottom: 4rem;
-    background: rgba(3, 0, 20, 0.4);
+    background: transparent;
 }
 
 .logos-row {
@@ -499,7 +491,7 @@ a {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #a5b4fc;
+    color: var(--accent-primary);
     background: rgba(99, 102, 241, 0.1);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
@@ -533,7 +525,7 @@ a {
 .card-tech span {
     font-size: 0.8rem;
     color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     padding: 4px 8px;
     border-radius: 4px;
 }
