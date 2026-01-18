@@ -594,6 +594,28 @@ a {
     max-width: 700px;
 }
 
+.exp-details {
+    list-style: none;
+    /* We will use custom markers if needed, or default allowed */
+    margin-top: 0.8rem;
+    padding-left: 0;
+}
+
+.exp-details li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.exp-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+}
+
 
 /* Footer Area */
 .footer-bento {
