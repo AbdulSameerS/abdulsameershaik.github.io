@@ -288,6 +288,7 @@ a {
 }
 
 /* Tech Ticker (Logos) */
+/* Tech Ticker (Logos) */
 .tech-ticker {
     border-top: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
@@ -301,22 +302,26 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
+    opacity: 0.8;
+}
+
+.logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
     opacity: 0.6;
+    transition: var(--transition);
 }
 
-.logo-text {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    letter-spacing: -0.02em;
-}
-
-.logos-row .logo-text:first-child {
-    color: var(--text-primary);
+.logo-img:hover {
+    filter: grayscale(0%);
     opacity: 1;
-    /* Highlight Stanford */
+    transform: scale(1.05);
 }
+
+
 
 
 /* Feature Spotlight (Leadership) */
