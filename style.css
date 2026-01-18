@@ -115,6 +115,7 @@ a {
 .text-gradient-primary {
     background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -205,40 +206,173 @@ a {
     border-color: var(--text-secondary);
 }
 
-/* Tech Ticker (Minimal) */
+/* Tech Ticker (Logos) */
 .tech-ticker {
     border-top: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    margin-bottom: 4rem;
+    background: rgba(3, 0, 20, 0.4);
+}
+
+.logos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    opacity: 0.6;
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: -0.02em;
+}
+
+.logos-row .logo-text:first-child {
+    color: var(--text-primary);
+    opacity: 1;
+    /* Highlight Stanford */
+}
+
+
+/* Feature Spotlight (Leadership) */
+.feature-spotlight {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .feature-spotlight {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+}
+
+.spotlight-badge {
+    display: inline-block;
+    color: #f472b6;
+    /* Pink/Rose for innovation */
+    background: rgba(244, 114, 182, 0.1);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(244, 114, 182, 0.2);
+}
+
+.spotlight-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #fff, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.spotlight-desc {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
     margin-bottom: 2rem;
 }
 
-.section-label-center {
+.spotlight-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.spotlight-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.spotlight-list li i {
+    color: #f472b6;
+    width: 20px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    color: var(--text-tertiary);
-    margin-bottom: 1.5rem;
+}
+
+/* Abstract Orb Visual */
+.spotlight-visual {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orb {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 30% 30%, #f472b6, #6366f1);
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.6;
+    animation: pulseOrb 8s infinite alternate;
+}
+
+@keyframes pulseOrb {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+.glass-panel {
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.stat-val {
+    color: var(--text-primary);
     font-weight: 600;
 }
 
-.tech-grid {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 2rem;
-    color: var(--text-tertiary);
-    opacity: 0.7;
-}
-
-.tech-grid i:hover {
-    color: var(--text-primary);
-    transform: translateY(-2px);
-    transition: var(--transition);
-}
-
-/* Bento Grid */
+/* Bento Grid Updates */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
