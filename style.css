@@ -1,38 +1,35 @@
 :root {
-    /* Squarespace-inspired 'Vivid Mesh' Theme */
-    --bg-color: #ffffff;
+    /* Professional 'Executive Slate' Theme */
+    --bg-color: #f8fafc;
+    /* Cool Grey 50 */
 
-    /* High-blur Glass Cards (Frosted White) */
-    --card-bg: rgba(255, 255, 255, 0.65);
-    --card-border: rgba(255, 255, 255, 0.8);
-    --card-hover-border: rgba(0, 0, 0, 0.1);
+    /* Clean Glass Cards */
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    /* Slate 200 */
+    --card-hover-border: #3b82f6;
+    /* Blue 500 */
 
-    /* Text - High Contrast Editorial */
-    --text-primary: #111111;
-    /* Near Black */
-    --text-secondary: #4a4a4a;
-    /* Dark Grey */
-    --text-tertiary: #767676;
-    /* Medium Grey */
+    /* Text - Sharp & Corporate */
+    --text-primary: #0f172a;
+    /* Slate 900 */
+    --text-secondary: #475569;
+    /* Slate 600 */
+    --text-tertiary: #94a3b8;
+    /* Slate 400 */
 
-    /* Accents - Bold & Saturated (Domains style) */
-    --accent-primary: #000000;
-    --accent-glow: rgba(0, 0, 0, 0.1);
+    /* Accents - Trustworthy Blue */
+    --accent-primary: #2563eb;
+    /* Royal Blue */
+    --accent-glow: rgba(37, 99, 235, 0.15);
 
-    /* Mesh Gradient Palette */
-    --mesh-1: #ff3366;
-    /* Vibrant Pink/Red */
-    --mesh-2: #0066ff;
-    /* Electric Blue */
-    --mesh-3: #00cc99;
-    /* Mint/Cyan */
-    --mesh-4: #ffcc00;
-    /* Sunny Yellow */
+    /* Professional Gradients (Subtle) */
+    --grad-1: #eff6ff;
+    --grad-2: #dbeafe;
 
-    --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-main: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     --max-width: 1200px;
-    /* Wider for editorial feel */
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 * {
@@ -45,32 +42,25 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     font-family: var(--font-main);
-    line-height: 1.5;
+    line-height: 1.6;
     overflow-x: hidden;
     position: relative;
     z-index: 1;
 }
 
-/* Dynamic Mesh Gradient Background */
+/* Subtle Professional Background */
 body::before {
     content: '';
     position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background-image:
-        radial-gradient(circle at 50% 50%, var(--mesh-1), transparent 40%),
-        radial-gradient(circle at 0% 0%, var(--mesh-2), transparent 40%),
-        radial-gradient(circle at 100% 0%, var(--mesh-3), transparent 40%),
-        radial-gradient(circle at 100% 100%, var(--mesh-4), transparent 40%),
-        radial-gradient(circle at 0% 100%, #ffffff, transparent 50%);
-    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(37, 99, 235, 0.03), transparent 40%),
+        radial-gradient(circle at 85% 90%, rgba(37, 99, 235, 0.03), transparent 40%);
     z-index: -1;
-    filter: blur(80px);
-    /* The signature soft blur */
-    opacity: 0.8;
-    animation: meshFlow 20s ease infinite alternate;
+    pointer-events: none;
 }
 
 @keyframes meshFlow {
@@ -159,42 +149,40 @@ a {
 }
 
 .text-gradient-primary {
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--gradient-2) 50%, var(--gradient-1) 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-gradient {
-    color: var(--gradient-3);
+    color: var(--accent-primary);
 }
 
 /* Updated Buttons */
 .btn-primary {
-    background: linear-gradient(90deg, var(--gradient-2), var(--gradient-1));
+    background: var(--accent-primary);
     color: #fff;
     border: none;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
-    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
-    /* Swap gradient on hover */
+    background: #1d4ed8;
+    /* Darker Blue */
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
     color: #fff;
 }
 
-/* Abstract Visuals inside cards - Aurora Mesh */
+/* Abstract Visuals inside cards - Professional */
 .visual-gradient-1 {
-    background: radial-gradient(circle at 80% 90%, rgba(139, 92, 246, 0.25), transparent 60%),
-        radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.15), transparent 60%);
+    background: radial-gradient(circle at 80% 90%, rgba(37, 99, 235, 0.1), transparent 60%);
 }
 
 .visual-mesh {
     background-image:
-        radial-gradient(at 0% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+        radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.08) 0px, transparent 50%);
 }
 
 /* Hero Section - Bold & Editorial */
