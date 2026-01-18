@@ -1,254 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbdulSameerS (Abdul Sameer Shaik)</title>
-    <meta name="description" content="GitHub-themed portfolio of Abdul Sameer Shaik">
-    
+    <title>Abdul Sameer Shaik | Data Intelligence Architect</title>
+    <meta name="description" content="Portfolio of Abdul Sameer Shaik, Data Scientist & Cloud Architect.">
+
+    <!-- Fonts: Plus Jakarta Sans for a modern, geometric feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navbar -->
+    <div class="spotlight-overlay"></div>
+
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <i class="fab fa-github"></i>
-                <span>AbdulSameerS</span>
-            </a>
+        <div class="container nav-inner">
+            <a href="#" class="logo">Abdul<span class="text-gradient">.</span></a>
             <ul class="nav-links">
-                <li><a href="#" class="nav-link">Overview</a></li>
-                <li><a href="#repositories" class="nav-link">Repositories</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="btn-sm">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="main-wrapper">
-        <!-- Sidebar -->
-        <aside class="profile-sidebar">
-            <div class="profile-avatar">
-                <!-- Placeholder for Avatar -->
-               <img src="https://ui-avatars.com/api/?name=Abdul+Sameer&background=random&size=512" alt="Profile Picture">
-            </div>
-            
-            <div class="profile-names">
-                <h1 class="profile-name">Abdul Sameer Shaik</h1>
-                <p class="profile-username">AbdulSameerS</p>
-            </div>
+    <main>
 
-            <p class="profile-bio">
-                Data Scientist & Cloud Architect. Building scalable ETL pipelines and deep learning intelligence.
-            </p>
-
-            <a href="mailto:shaik.abduls@northeastern.edu" class="btn btn-primary">Follow</a>
-            <a href="#" class="btn btn-secondary">Sponsor</a>
-
-            <ul class="profile-meta">
-                <li><i class="fas fa-map-marker-alt"></i> Boston, MA</li>
-                <li><i class="fas fa-envelope"></i> shaik.abduls@northeastern.edu</li>
-                <li><i class="fas fa-link"></i> <a href="https://linkedin.com/in/abdul-sameer-shaik-689323189">LinkedIn</a></li>
-                <li><i class="fas fa-graduation-cap"></i> Northeastern University</li>
-            </ul>
-
-            <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-color);">
-                <h3 style="font-size: 16px; margin-bottom: 12px;">Top Skills</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">Apache Spark</span>
-                    <span class="skill-tag">SQL</span>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-badge">Available for new opportunities</div>
+                <h1 class="hero-title">
+                    Architecting <br>
+                    <span class="text-gradient-primary">Data Intelligence.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I build scalable ETL pipelines, deep learning models, and cloud-native architectures that transform
+                    raw signals into strategic impact.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/AbdulSameerS" target="_blank" class="btn btn-secondary"><i
+                            class="fab fa-github"></i> GitHub</a>
                 </div>
+
+                <!-- Abstract Visual element -->
+                <div class="hero-glow"></div>
             </div>
-        </aside>
+        </section>
 
-        <!-- Main Content -->
-        <main class="content-area">
-            
-            <!-- Readme (About) -->
-            <div class="readme-section">
-                <div class="readme-header">
-                    AbdulSameerS / README.md
-                </div>
-                <div class="readme-content">
-                    <h1>Hi there, I'm Abdul Sameer 👋</h1>
-                    <p>I'm a Data Scientist specializing in <strong>Machine Learning</strong>, <strong>Cloud Architecture</strong>, and <strong>Big Data</strong>.</p>
-                    
-                    <h3>🚀 About Me</h3>
-                    <p>
-                        I architect the future of data with scalable ETL pipelines, deep learning intelligence, and cloud-native architectures.
-                        Currently pursuing my MS in Data Science at Northeastern University.
-                    </p>
-
-                    <h3>🎓 Education</h3>
-                    <ul>
-                        <li><strong>Northeastern University</strong> - MS Data Science (2025 - 2027)</li>
-                        <li><strong>Madanapalle Institute of Technology & Science</strong> - B.Tech ECE (2018 - 2022)</li>
-                    </ul>
+        <!-- Tech Stack / Sticker Sheet -->
+        <div class="tech-ticker">
+            <div class="container">
+                <p class="section-label-center">Powered by</p>
+                <div class="tech-grid">
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fab fa-aws" title="AWS"></i>
+                    <i class="fas fa-snowflake" title="Snowflake"></i> <!-- using fa-snowflake icon -->
+                    <i class="fas fa-database" title="SQL"></i>
+                    <i class="fab fa-docker" title="Docker"></i>
+                    <i class="fas fa-brain" title="Machine Learning"></i> <!-- Generic ML -->
                 </div>
             </div>
-
-            <!-- Pinned Repos (Projects) -->
-            <div class="section-title">
-                <span>Pinned</span>
-                <a href="#" style="font-size: 13px;">Customize your pins</a>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <div>
-                            <i class="fas fa-book" style="color: var(--text-secondary); margin-right: 8px;"></i>
-                            <a href="#" class="repo-title">semantic-resume-matching</a>
-                            <span class="badge">Public</span>
-                        </div>
-                    </div>
-                    <p class="repo-desc">Resume-Job alignment system using LLaMA, RAG, and FAISS for high-dimensional vector search.</p>
-                    <div class="repo-meta">
-                        <span><span class="language-dot" style="background-color: #3572A5;"></span>Python</span> <!-- Python Blue -->
-                        <span><i class="far fa-star"></i> 124</span>
-                        <span><i class="fas fa-code-branch"></i> 32</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <div>
-                            <i class="fas fa-book" style="color: var(--text-secondary); margin-right: 8px;"></i>
-                            <a href="#" class="repo-title">cloud-native-delta-lake</a>
-                            <span class="badge">Public</span>
-                        </div>
-                    </div>
-                    <p class="repo-desc">ACID-compliant Delta Lake pipeline on AWS using Glue, Redshift, and S3.</p>
-                    <div class="repo-meta">
-                        <span><span class="language-dot" style="background-color: #F1E05A;"></span>JavaScript</span>
-                        <span><i class="far fa-star"></i> 89</span>
-                        <span><i class="fas fa-code-branch"></i> 12</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <div>
-                            <i class="fas fa-book" style="color: var(--text-secondary); margin-right: 8px;"></i>
-                            <a href="#" class="repo-title">toxicity-detection-transformer</a>
-                            <span class="badge">Public</span>
-                        </div>
-                    </div>
-                    <p class="repo-desc">Fine-tuned DistilBERT model for real-time toxic content detection in gaming chat.</p>
-                    <div class="repo-meta">
-                        <span><span class="language-dot" style="background-color: #3572A5;"></span>Python</span>
-                        <span><i class="far fa-star"></i> 256</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <div>
-                            <i class="fas fa-book" style="color: var(--text-secondary); margin-right: 8px;"></i>
-                            <a href="#" class="repo-title">energy-demand-forecasting</a>
-                            <span class="badge">Public</span>
-                        </div>
-                    </div>
-                    <p class="repo-desc">Temporal forecasting ensemble (XGBoost, LSTM) for energy consumption prediction.</p>
-                    <div class="repo-meta">
-                        <span><span class="language-dot" style="background-color: #3572A5;"></span>Python</span>
-                        <span><i class="far fa-star"></i> 45</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Activity / Experience -->
-            <div class="section-title">
-                <span>Contribution activity</span>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-title" style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
-                    September 2025
-                </div>
-
-                <!-- Job 1 -->
-                <div class="timeline-item">
-                    <div style="display: flex; gap: 16px;">
-                        <div style="display: flex; flex-direction: column; align-items: center;">
-                             <div style="background: var(--border-color); width: 2px; height: 100%;"></div>
-                        </div>
-                        <div>
-                             <h4 class="timeline-title">Application Data Processor <span style="font-weight: 400; color: var(--text-secondary);">at Northeastern University</span></h4>
-                             <p class="timeline-subtitle">Sep 2025 - Present</p>
-                             <ul class="timeline-desc" style="list-style-position: inside; color: var(--text-secondary);">
-                                 <li>Engineered high-precision validation protocol for academic credentials.</li>
-                                 <li>Optimized resolution pipeline, reducing latency by 20%.</li>
-                             </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-title" style="font-size: 14px; color: var(--text-secondary); margin: 24px 0 16px;">
-                    August 2022
-                </div>
-
-                <!-- Job 2 -->
-                <div class="timeline-item">
-                     <div style="display: flex; gap: 16px;">
-                        <div style="display: flex; flex-direction: column; align-items: center;">
-                             <div style="background: var(--border-color); width: 2px; height: 100%;"></div>
-                        </div>
-                        <div>
-                             <h4 class="timeline-title">Data Scientist <span style="font-weight: 400; color: var(--text-secondary);">at Tata Consultancy Services</span></h4>
-                             <p class="timeline-subtitle">Aug 2022 - Dec 2024</p>
-                             <ul class="timeline-desc" style="list-style-position: inside; color: var(--text-secondary);">
-                                 <li>Architected cloud-native data ecosystem using Python and Snowflake.</li>
-                                 <li>Deployed predictive intelligence engines (XGBoost, MLflow).</li>
-                             </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-title" style="font-size: 14px; color: var(--text-secondary); margin: 24px 0 16px;">
-                    March 2022
-                </div>
-
-                 <!-- Job 3 -->
-                 <div class="timeline-item">
-                    <div style="display: flex; gap: 16px;">
-                       <div style="display: flex; flex-direction: column; align-items: center;">
-                            <div style="background: var(--border-color); width: 2px; height: 100%;"></div>
-                       </div>
-                       <div>
-                            <h4 class="timeline-title">Machine Learning Intern <span style="font-weight: 400; color: var(--text-secondary);">at Cognizant</span></h4>
-                            <p class="timeline-subtitle">Mar 2022 - Jun 2022</p>
-                            <ul class="timeline-desc" style="list-style-position: inside; color: var(--text-secondary);">
-                                <li>Wrangled petabyte-scale datasets using Apache Spark.</li>
-                                <li>Designed robust schemas for structure/unstructured data lakes.</li>
-                            </ul>
-                       </div>
-                   </div>
-               </div>
-
-            </div>
-
-        </main>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="#" class="footer-logo"><i class="fab fa-github"></i></a>
-        <div style="margin-top: 10px;">
-            &copy; 2025 Abdul Sameer Shaik. All rights reserved.
         </div>
-    </footer>
 
+        <!-- Bento Grid Projects Section -->
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-desc">High-performance data systems and ML engines.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Featured Large Card -->
+                    <div class="card bento-large group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">LLM & RAG</span>
+                                <span class="card-date">2024</span>
+                            </div>
+                            <h3 class="card-title">Semantic Resume Matcher</h3>
+                            <p class="card-desc">
+                                A context-aware matching engine using LLaMA, FAISS, and RAG.
+                                Bridges the semantic gap between talent and opportunity with high-dimensional vector
+                                search.
+                            </p>
+                            <div class="card-tech">
+                                <span>Python</span><span>LangChain</span><span>Vector DB</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-gradient-1"></div>
+                    </div>
+
+                    <!-- Medium Card -->
+                    <div class="card bento-medium group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">AWS Cloud</span>
+                            </div>
+                            <h3 class="card-title">Cloud-Native Delta Lake</h3>
+                            <p class="card-desc">
+                                ACID-compliant pipeline processing terabytes of data.
+                                Built with Glue, Redshift, and S3 for real-time analytics.
+                            </p>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-grid-pattern"></div>
+                    </div>
+
+                    <!-- Medium Card -->
+                    <div class="card bento-medium group">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge">NLP Transformer</span>
+                            </div>
+                            <h3 class="card-title">Toxicity Detection</h3>
+                            <p class="card-desc">
+                                Fine-tuned DistilBERT model for real-time chat sanitization.
+                                optimized for sub-100ms inference latency.
+                            </p>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-visual visual-mesh"></div>
+                    </div>
+
+                    <!-- Small / Wide Card -->
+                    <div class="card bento-wide group">
+                        <div class="card-content row-content">
+                            <div>
+                                <h3 class="card-title">Energy Demand Forecasting</h3>
+                                <p class="card-desc">Ensemble forecasting (XGBoost, LSTM) for power grid load
+                                    prediction.</p>
+                            </div>
+                            <div class="card-tech">
+                                <span>Time-Series</span><span>PyTorch</span>
+                            </div>
+                            <a href="#" class="card-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience (Minimalist List) -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                </div>
+
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-date">2025 - Present</div>
+                        <div class="exp-main">
+                            <h3 class="exp-role">Application Data Processor</h3>
+                            <p class="exp-company">Northeastern University</p>
+                        </div>
+                        <p class="exp-desc">Engineered high-precision validation protocols and optimized resolution
+                            pipelines reducing latency by 20%.</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-date">2022 - 2024</div>
+                        <div class="exp-main">
+                            <h3 class="exp-role">Data Scientist</h3>
+                            <p class="exp-company">Tata Consultancy Services</p>
+                        </div>
+                        <p class="exp-desc">Architected cloud-native data ecosystems (Snowflake/Python) and deployed
+                            predictive intelligence engines (XGBoost).</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-date">2022 - 2022</div>
+                        <div class="exp-main">
+                            <h3 class="exp-role">Machine Learning Intern</h3>
+                            <p class="exp-company">Cognizant</p>
+                        </div>
+                        <p class="exp-desc">Wrangled petabyte-scale datasets with Apache Spark and designed robust
+                            schemas for data lakes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Footer Split -->
+        <section id="about" class="section">
+            <div class="container footer-bento">
+                <div class="card about-card">
+                    <h3>About Me</h3>
+                    <p>
+                        I'm a Data Scientist pursuing my MS at Northeastern University. I sit at the intersection of
+                        data engineering and machine learning,
+                        focusing on building systems that don't just process data, but understand it.
+                    </p>
+                </div>
+                <div class="card contact-card">
+                    <h3>Let's Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:shaik.abduls@northeastern.edu">Email <i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://linkedin.com">LinkedIn <i class="fas fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/AbdulSameerS">GitHub <i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
